@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Animated Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div id="images">
+      <h1>Image Gallery</h1>
+      <div class="gallery">
+        <div class="imagegallery">
+          <img
+            loading="lazy"
+            src="https://images.pexels.com/photos/17681922/pexels-photo-17681922/free-photo-of-green-hills-in-mountains-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Nature"
+            onclick="openLightbox(this, 0)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/31204710/pexels-photo-31204710/free-photo-of-serene-stone-lantern-in-japanese-garden-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Garden"
+            onclick="openLightbox(this, 1)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/31332921/pexels-photo-31332921/free-photo-of-colorful-autumn-foliage-under-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Forest"
+            onclick="openLightbox(this, 2)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/31245632/pexels-photo-31245632/free-photo-of-beautiful-cherry-blossom-blooming-in-spring.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Ocean"
+            onclick="openLightbox(this, 3)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/162520/farmer-man-shepherd-dog-162520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Desert"
+            onclick="openLightbox(this, 4)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/70365/forest-sunbeams-trees-sunlight-70365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Mountains"
+            onclick="openLightbox(this, 5)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Waterfall"
+            onclick="openLightbox(this, 6)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/225203/pexels-photo-225203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Technology"
+            onclick="openLightbox(this, 7)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/27970262/pexels-photo-27970262/free-photo-of-surreal-nature.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Sunset"
+            onclick="openLightbox(this, 8)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/9748974/pexels-photo-9748974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Starry Night"
+            onclick="openLightbox(this, 9)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/1006121/pexels-photo-1006121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Flowers"
+            onclick="openLightbox(this, 10)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/30602120/pexels-photo-30602120/free-photo-of-scenic-wooden-pathway-in-buenos-aires-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Rainforest"
+            onclick="openLightbox(this, 11)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/1576955/pexels-photo-1576955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Glacier"
+            onclick="openLightbox(this, 12)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/12223615/pexels-photo-12223615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Volcano"
+            onclick="openLightbox(this, 13)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/42148/pexels-photo-42148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="River"
+            onclick="openLightbox(this, 14)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/31338526/pexels-photo-31338526/free-photo-of-night-street-scene-in-osaka-with-ambient-lights.jpeg"
+            alt="Space"
+            onclick="openLightbox(this, 15)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/31001136/pexels-photo-31001136/free-photo-of-bustling-street-in-osaka-with-tsutenkaku-tower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Snowy Landscape"
+            onclick="openLightbox(this, 16)"
+          />
+        </div>
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Canyon"
+            onclick="openLightbox(this, 17)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/19744765/pexels-photo-19744765/free-photo-of-a-river-flowing-through-a-forested-area.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Lake"
+            onclick="openLightbox(this, 18)"
+          />
+        </div>
+
+        <div class="imagegallery">
+          <img
+            src="https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Moon"
+            onclick="openLightbox(this, 19)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <img id="lightbox-img" />
+      <div class="caption" id="caption"></div>
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#images {
+  background: rgb(0, 0, 0);
+}
+#images h1 {
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-weight: 900;
+  background: linear-gradient(to top, rgb(142, 167, 41), rgb(25, 25, 26));
+  color: transparent;
+  padding-top: 50px;
+  background-clip: text;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.imagegallery {
+  width: 100%;
+  height: 400px;
+  margin: 10px;
+}
+
+.imagegallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.imagegallery img:hover {
+  transform: scale(1.05) rotateY(10deg);
+  box-shadow: 0 0px 10px rgb(140, 242, 184);
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.caption {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+.lightbox.show img {
+  transform: scale(1);
+}
+.close,
+.prev,
+.next {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.close {
+  top: 20px;
+  right: 30px;
+}
+.prev {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
